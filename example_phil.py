@@ -180,7 +180,7 @@ class HexMirrorIntro(Scene):
         restored_dashed = Circle(radius=dashed_ball_radius).move_to(mid + offset_out * n_out)
         restored_dashed = DashedVMobject(restored_dashed, num_dashes=num_dashes, dashed_ratio=dashed_ratio)
         restored_dashed.set_stroke(color=GRAY_A, width=2)
-        dashed_balls[break_idx] = restored_dashed  # 放返入 group
+        dashed_balls[break_idx] = restored_dashed  
         self.play(FadeIn(restored_dashed, scale=1.1), run_time=0.5)
 
        
